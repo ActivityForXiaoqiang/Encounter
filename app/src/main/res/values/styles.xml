@@ -26,4 +26,14 @@
         <item name="android:minHeight">40dp</item>
         <item name="android:maxHeight">40dp</item>
     </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- activity 不变暗 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
 </resources>

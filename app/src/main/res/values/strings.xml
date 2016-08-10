@@ -10,4 +10,40 @@
     <string name="home_title">邂逅</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <!-- 兴趣标签对应文字列表-->
+    <string name="tag_title">选择你感兴趣的标签</string>
+
+    <string name="tag_movie">电影</string>
+    <string name="tag_book">书单</string>
+    <string name="tag_TV">电视剧</string>
+    <string name="tag_opera">歌剧</string>
+
+    <string name="tag_hotpot">火锅</string>
+    <string name="tag_shiguobanfan">石锅拌饭</string>
+    <string name="tag_steak">牛排</string>
+    <string name="tag_sushi">寿司</string>
+
+    <string name="tag_runing">跑步</string>
+    <string name="tag_dance">跳舞</string>
+
+    <string name="tag_golf">高尔夫</string>
+    <string name="tag_billiards">台球</string>
+    <string name="tag_people">村上椿树</string>
+
+    <string name="tag_manga1">棋魂</string>
+    <string name="tag_manga2">海贼王</string>
+
+    <string name="tag_mingxing1">周杰伦</string>
+    <string name="tag_mingxing2">陈奕迅</string>
+    <string name="tag_it">IT</string>
+
+    <string name="tag_palce1">威尼斯</string>
+    <string name="tag_palce2">爱情海</string>
+    <string name="tag_palce3">纽约</string>
+    <string name="tag_palce4">上海</string>
+    <string name="tag_complete">完成</string>
+
+    <!-- position -->
+    <string name="position_system">按远近距离排序</string>
+    <string name="position_edit_hint_text">请输入与Ta错过的地点</string>
 </resources>

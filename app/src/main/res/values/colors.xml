@@ -8,5 +8,13 @@
     <color name="color_white">#ffffff</color>
     <color name="color_black">#000000</color>
     <color name="color_gray_dark">#bfbfbf</color>
+    <color name="color_light_black">#646464</color>
+    <!--兴趣标签颜色列表 -->
+    <color name="tag_color_purple">#9933FF</color>
+    <color name="tag_color_red">#FF3300</color>
+    <color name="tag_color_green">#00CC00</color>
+    <color name="tag_color_yellow">#FFCC00</color>
+    <color name="tag_color_blue">#0066FF</color>
+    <color name="tag_color_seeblue">#66CCFF</color>
 </resources>
 

@@ -21,7 +21,7 @@ import ecncounter.wilson.com.encounter.listener.RecyclerViewOnItemClickListener;
 /**
  * Created by xiaoqiang on 16/7/31.
  */
-public class PicWallAdapter extends RecyclerView.Adapter<PicWallAdapter.ViewHolder> implements View.OnClickListener {
+public class PicWallAdapter extends RecyclerView.Adapter<PicWallAdapter.ViewHolder> {
     int[] h = {600, 700, 800};
     private Context context;
     private ArrayList<Pictrue> dataList;
@@ -54,9 +54,18 @@ public class PicWallAdapter extends RecyclerView.Adapter<PicWallAdapter.ViewHold
         Random r = new Random();
         params.height = h[r.nextInt(2)];
         holder.imageView.setLayoutParams(params);
+        holder.plane.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "点击了耳语或爱心", Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.love.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-//        holder.plane.setOnClickListener(this);
-//        holder.love.setOnClickListener(this);
+            }
+        });
 
         holder.itemView.setTag(position);
     }
@@ -70,25 +79,21 @@ public class PicWallAdapter extends RecyclerView.Adapter<PicWallAdapter.ViewHold
         itemClickListener = clickListener;
     }
 
-    @Override
-    public void onClick(View view) {
-        Toast.makeText(context, "点击了耳语或爱心", Toast.LENGTH_SHORT).show();
-    }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        private SelectableRoundedImageView imageView;
-        private RelativeLayout plane, love;
+        SelectableRoundedImageView imageView;
+        RelativeLayout plane, love;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            initView();
+            initView(itemView);
         }
 
-        private void initView() {
+        private void initView(View itemView) {
             imageView = (SelectableRoundedImageView) itemView.findViewById(R.id.masonry_item_img);
             imageView.setCornerRadiiDP(10, 10, 0, 0);
-            plane = (RelativeLayout) imageView.findViewById(R.id.main_picwall_item_plane);
-            love = (RelativeLayout) imageView.findViewById(R.id.main_picwall_item_love);
+            plane = (RelativeLayout) itemView.findViewById(R.id.main_picwall_item_plane);
+            love = (RelativeLayout) itemView.findViewById(R.id.main_picwall_item_love);
         }
     }
 }

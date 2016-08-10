@@ -24,6 +24,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ecncounter.wilson.com.encounter.DTO.Pictrue;
+import ecncounter.wilson.com.encounter.EUI.dialog.ConstellationDialog;
+import ecncounter.wilson.com.encounter.EUI.dialog.PositionDialog;
+import ecncounter.wilson.com.encounter.EUI.dialog.TagDialog;
 import ecncounter.wilson.com.encounter.R;
 import ecncounter.wilson.com.encounter.adapter.PicWallAdapter;
 import ecncounter.wilson.com.encounter.listener.RecyclerViewOnItemClickListener;
@@ -77,7 +80,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         final FloatingActionButton rightLowerButton = new FloatingActionButton.Builder(this)
                 .setContentView(menuIcon)
                 .setBackgroundDrawable(R.mipmap.icon_menu)
-        .setLayoutParams(params)
+                .setLayoutParams(params)
                 .build();
 
         SubActionButton.Builder rLSubBuilder = new SubActionButton.Builder(this);
@@ -105,11 +108,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         SubActionButton sab5 = rLSubBuilder.setContentView(rlIcon5, blueParams).build();
 
 
-        rlIcon1.setBackgroundResource(R.mipmap.index_icon_constellation);
-        rlIcon2.setBackgroundResource(R.mipmap.index_icon_contact);
-        rlIcon3.setBackgroundResource(R.mipmap.index_icon_meet);
-        rlIcon4.setBackgroundResource(R.mipmap.index_icon_near);
-        rlIcon5.setBackgroundResource(R.mipmap.index_icon_tag);
+        rlIcon1.setBackgroundResource(R.mipmap.index_icon_near);
+        rlIcon2.setBackgroundResource(R.mipmap.index_icon_tag);
+        rlIcon3.setBackgroundResource(R.mipmap.index_icon_constellation);
+        rlIcon4.setBackgroundResource(R.mipmap.index_icon_contact);
+        rlIcon5.setBackgroundResource(R.mipmap.index_icon_meet);
 
 
         final FloatingActionMenu rightLowerMenu = new FloatingActionMenu.Builder(this)
@@ -145,10 +148,27 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         sab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                PositionDialog dialog = new PositionDialog(MainActivity.this, R.style.Dialog_Fullscreen);
+                dialog.show();
+                rightLowerMenu.close(true);
             }
         });
-
+        sab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TagDialog dialog = new TagDialog(MainActivity.this, R.style.Dialog_Fullscreen);
+                dialog.show();
+                rightLowerMenu.close(true);
+            }
+        });
+        sab3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ConstellationDialog dialog = new ConstellationDialog(MainActivity.this, R.style.Dialog_Fullscreen);
+                dialog.show();
+                rightLowerMenu.close(true);
+            }
+        });
 
     }
 

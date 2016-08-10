@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/btn_capricorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/btn_capricorn" />
+
+    <ImageView
+
+        android:id="@+id/btn_aries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_capricorn"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_toStartOf="@+id/btn_capricorn"
+        android:src="@mipmap/btn_aries" />
+
+    <ImageView
+        android:id="@+id/btn_sagittarius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_capricorn"
+        android:layout_below="@+id/btn_capricorn"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/btn_sagittarius" />
+
+    <ImageView
+        android:id="@+id/btn_aquarius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn_aquarius"
+        android:layout_below="@+id/btn_capricorn"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/btn_leo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/btn_leo"
+        android:layout_below="@+id/btn_sagittarius"
+        android:layout_toStartOf="@+id/btn_capricorn" />
+
+    <ImageView
+        android:id="@+id/btn_gemini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_capricorn"
+        android:layout_below="@+id/btn_leo"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/btn_gemini" />
+
+    <ImageView
+        android:id="@+id/btn_taurus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_aquarius"
+        android:layout_alignTop="@+id/btn_leo"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/btn_taurus" />
+
+    <ImageView
+        android:id="@+id/btn_scorpio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_aries"
+        android:layout_below="@+id/btn_taurus"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/btn_scorpio" />
+
+    <ImageView
+        android:id="@+id/btn_virgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn_virgo"
+        android:layout_below="@+id/btn_taurus"
+        android:layout_alignEnd="@+id/btn_cancer" />
+
+    <ImageView
+        android:id="@+id/btn_pisces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn_pisces"
+        android:layout_below="@+id/btn_gemini"
+        android:layout_alignEnd="@+id/btn_aquarius" />
+
+    <ImageView
+        android:id="@+id/btn_libra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_pisces"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/btn_sagittarius"
+        android:src="@mipmap/btn_libra" />
+
+    <ImageView
+        android:id="@+id/btn_cancer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn_cancer"
+        android:layout_alignTop="@+id/btn_libra"
+        android:layout_toEndOf="@+id/btn_capricorn"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
