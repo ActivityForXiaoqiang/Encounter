@@ -58,6 +58,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void custom() {
+        //test
         //弧度距离
         int ActionMenuRadius = getResources().getDimensionPixelSize(R.dimen.mian_menu_radius);
         int menu_button_size = getResources().getDimensionPixelSize(R.dimen.mian_menu_button_size);
