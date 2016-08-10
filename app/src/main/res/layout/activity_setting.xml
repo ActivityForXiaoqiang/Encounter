@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EUI.Activity.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@mipmap/icon_left_arrow"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/setting_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@mipmap/icon_talk"/>
+            </LinearLayout>
+            <!--向我显示-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="向我显示"
+                android:textColor="@color/color_gray"
+                />
+
+            <LinearLayout
+                android:id="@+id/setting_boy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="男"
+                    android:textSize="@dimen/tet_non_size"/>
+
+                <CheckBox
+                    android:id="@+id/setting_boy_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_button_style"
+                    android:checked="true"
+                    android:paddingRight="10dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="#4c4c4c"/>
+
+            <LinearLayout
+                android:id="@+id/setting_girl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="女"
+                    android:textSize="@dimen/tet_non_size"/>
+
+                <CheckBox
+                    android:id="@+id/setting_girl_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_button_style"
+                    android:paddingRight="10dp"
+                    />
+            </LinearLayout>
+
+            <!--搜索范围-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="搜索范围"
+                    android:textColor="@color/color_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/setting_scope_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="20"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="km"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <SeekBar
+                    android:id="@+id/setting_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="20"
+                    android:thumb="@mipmap/icon_circle_h"
+                    android:thumbOffset="0dp"
+                    />
+            </LinearLayout>
+
+
+            <!--隐私-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="隐私"
+                    android:textColor="@color/color_gray"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="屏蔽手机联系人"
+                    android:textSize="@dimen/tet_non_size"/>
+
+                <CheckBox
+                    android:id="@+id/screen_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_button_style"
+                    android:paddingRight="10dp"
+                    />
+            </LinearLayout>
+
+            <!--推送通知-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="推送通知"
+                    android:textColor="@color/color_gray"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="启用消息提醒"
+                    android:textSize="@dimen/tet_non_size"/>
+
+                <CheckBox
+                    android:id="@+id/message_alert_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_button_style"
+                    android:paddingRight="10dp"
+                    />
+            </LinearLayout>
+
+            <!--账户信息-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="账户信息"
+                android:textColor="@color/color_gray"
+                />
+
+            <LinearLayout
+                android:id="@+id/edit_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="编辑你的账户信息"
+                    android:textSize="@dimen/tet_non_size"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/icon_right_arrow_n"/>
+            </LinearLayout>
+
+            <!--退出登录  ；联系我们-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/button_logout_n"
+                    android:onClick="onClickLogout"
+                    android:text="退出登录"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/tet_non_size"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/button_contact_h"
+                    android:onClick="onClickContact"
+                    android:text="联系我们"
+                    android:textSize="@dimen/tet_non_size"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
