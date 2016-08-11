@@ -9,6 +9,7 @@
 
     <dimen name="tet_non_size">16sp</dimen>
     <dimen name="homePage_title_size">20sp</dimen>
+    <dimen name="txt_small_size">12sp</dimen>
 
     <dimen name="mian_menu_button_size">60dp</dimen>
     <dimen name="mian_menu_button_margin">20dp</dimen>

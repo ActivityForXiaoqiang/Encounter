@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="encounter.wilson.com.encounter.EUI.Activity.SportActivity">
+    tools:context=".EUI.Activity.SportActivity">
     <!--title-->
     <LinearLayout
         android:layout_width="match_parent"

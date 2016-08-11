@@ -8,7 +8,7 @@ import android.widget.CheckBox;
 
 import java.util.ArrayList;
 
-import ecncounter.wilson.com.encounter.EUI.Sport;
+import ecncounter.wilson.com.encounter.DTO.Sport;
 import ecncounter.wilson.com.encounter.R;
 
 
@@ -59,7 +59,6 @@ public class SportTagsAdapter extends BaseAdapter {
     }
 
     private class viewHolder {
-        private CheckBox tv;
-        private CheckBox cb;
+        private CheckBox tv,cb;
     }
 }
